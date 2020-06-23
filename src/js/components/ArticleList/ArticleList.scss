@@ -1,0 +1,16 @@
+@use '../../../base';
+
+tr:nth-of-type(odd) > td {
+    background-color: base.$secondary-dark-color;
+    color: base.$text-dark-bg-color
+} 
+
+tr:nth-of-type(even) > td {
+    background-color: base.$main-color;
+} 
+
+table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%
+}

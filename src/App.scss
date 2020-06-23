@@ -1,0 +1,17 @@
+@use './base';
+
+.App{
+    background-color: base.$main-color;
+    color: base.$text-bright-bg-color;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px 0px 0px;
+    color: base.$text-bright-bg-color;
+}
+
+h2 {
+    margin: 0px 0px 0px;
+    color: base.$text-bright-bg-color;
+}

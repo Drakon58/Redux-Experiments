@@ -1,10 +1,11 @@
 import {createStore, applyMiddleware} from "redux";
 import rootReducer from "../modules/index";
 import {censorMiddleWare} from "../middleware/WordFilter"
+import thunk from 'redux-thunk'
 
 const store = createStore(
     rootReducer,
-    applyMiddleware(censorMiddleWare)
+    applyMiddleware(thunk, censorMiddleWare)
     );
 
 export default store;

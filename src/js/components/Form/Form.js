@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from 'react-redux'
-import { addArticle } from '../modules/index'
+import { addArticle } from '../../modules/index'
+import './Form.scss'
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -34,7 +35,7 @@ class ConnectedForm extends React.Component {
     render() {
         const { title } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="dark">
                 <div>
                     <label htmlFor="title">Article Title</label>
                     <input type="text" id="title" value={title} onChange={this.handleChange}></input>
