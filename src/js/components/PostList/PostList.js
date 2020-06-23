@@ -15,10 +15,6 @@ const mapStateToProps = state => {
 }
 
 export class ConnectedPost extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     componentDidMount(){
         this.props.getPosts()
     }
