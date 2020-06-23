@@ -1,0 +1,6 @@
+Circle: #4B8082
+Crescent: #79CDD3
+Peaks: #D4E7F7
+Mountain body: #8E9BA8
+Mountain Outline: #231F20
+Text: #231F20
