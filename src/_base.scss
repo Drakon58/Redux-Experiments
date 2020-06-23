@@ -1,0 +1,18 @@
+$main-color: #4B8082;
+$secondary-bright-color: #79CDD3;
+$secondary-dark-color: #213a3b;
+$accent-1-color: #8E9BA8;
+$accent-2-color: #D4E7F7;
+$text-bright-bg-color: #231F20;
+$text-dark-bg-color: #fadfe5;
+
+
+.bright{
+    color: $text-bright-bg-color;
+    background-color: $secondary-bright-color;
+}
+
+.dark{
+    color: $text-dark-bg-color;
+    background-color: $secondary-dark-color;
+}
