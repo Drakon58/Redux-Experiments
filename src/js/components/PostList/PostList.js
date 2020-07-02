@@ -2,6 +2,8 @@ import React from 'react'
 import {getPosts} from '../../action-functions/JsonPlaceholder'
 import { connect } from 'react-redux'
 
+import './PostList.scss'
+
 const mapDispatchToProps = dispatch => {
     return {
         getPosts: () => dispatch(getPosts())
@@ -21,11 +23,11 @@ export class ConnectedPost extends React.Component {
 
     render(){
         return (
-            <ul>
+            <ul className="postList">
                 {this.props.posts.map(post => (
-                    <li key={post.id}>
-                        <div><h3>{post.title}</h3></div>
-                        <div>{post.body}</div>
+                    <li key={post.id} className="post">
+                        <h3>{post.title}</h3>
+                        <p>{post.body}</p>
                     </li>
                 ))}
             </ul>

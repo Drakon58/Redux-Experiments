@@ -1,7 +1,28 @@
+@use '../../../base';
+
 $font-stack: Helvetica, sans-serif;
-$post-color: rgb(37, 151, 204);
+
+.postList {
+    list-style-type: none;
+}
 
 .post {
     font:  $font-stack;
-    color: $post-color
+    color: base.$text-bright-bg-color;
+    background-color: base.$main-color;
+    border: 2px solid base.$secondary-dark-color;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 0em 3em 0em;
+
+    &:hover {
+        color: base.$text-dark-bg-color;
+        background-color: base.$secondary-dark-color;
+    }
+    h3 {
+        text-transform: uppercase;
+    }
+    p {
+        text-align: left;
+    }
 }
